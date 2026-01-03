@@ -1,4 +1,4 @@
-// Dans votre fichier router/index.js
+
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AuthView from '../views/AuthView.vue'
@@ -18,8 +18,10 @@ const routes = [
     name: 'auth',
     component: AuthView,
     meta: { 
+
       requiresGuest: true,
       title: 'Authentification'
+
     }
   },
   { 
@@ -36,7 +38,9 @@ const routes = [
     name: 'project-details',
     component: ProjectDetails,
     meta: { 
+
       requiresAuth: true,
+
       title: 'Détails du projet'
     },
     props: true
@@ -50,6 +54,7 @@ const routes = [
     path: '/signup',
     redirect: { name: 'auth', query: { mode: 'signup' } }
   },
+
   // Route 404
   {
     path: '/:pathMatch(.*)*',
@@ -97,7 +102,9 @@ router.beforeEach(async (to, from, next) => {
   }
   
   // Route réservée aux invités - si déjà connecté, rediriger
-  if (to.meta.requiresGuest && authStore.user) {
+
+  if (to.meta.guestOnly && authStore.user) {
+
     next('/dashboard')
     return
   }
