@@ -1,5 +1,34 @@
-# Vue 3 + Vite
+# Project Management (Kanban Simplifié)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+*Auteurs :* Chegdani Fatima & Zineb Elfarissi
+*Université :* Cadi Ayyad, ENSA Safi – Département IRT
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Avant de lancer le projet, assurez-vous d’avoir installé :
+- Node.js (version 16 ou plus)
+- npm
+- Un compte Firebase
+ Cloner le dépôt
+git clone https://github.com/Fatima1234-cheg/Project_Management-_Kanban.git
+cd Project_Management-_Kanban
+Installer les dépendances
+npm install
+Configuration Firebase
+1.	Allez sur Firebase Console
+2.	Créez un nouveau projet ou sélectionnez un projet existant
+3.	Ajoutez une application web
+4.	Copiez les valeurs de configuration
+5.	Configurer Firestore
+•	Dans Firebase Console, allez dans "Firestore Database"
+5.	Activer l'authentification
+•	Dans Firebase Console, allez dans "Authentication"
+•	Cliquez sur "Commencer"
+•	Activez les fournisseurs :
+o	Email/Mot de passe
+o	Google
+Démarrer l'application en développement
+npm run dev
+Guide d'Utilisation
+Accéder à l'application :
+URL : project-management-kanba-5b42d.firebaseapp.com
+Email : ChegdaniElfarissi34@gmail.com
+Password : FatimaZineb
